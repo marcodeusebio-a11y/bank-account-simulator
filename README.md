@@ -54,6 +54,7 @@ Main source files include:
 ## Build and run
 
 ### In Xcode
+
 1. Open the Xcode project.
 2. Select the `Bank Account Simulator` scheme.
 3. Build and run the project.
@@ -61,7 +62,7 @@ Main source files include:
 
 ## Screenshot
 
-![Bank Account Simulator running in Xcode] <img width="1680" height="1050" alt="Screenshot 2026-05-13 at 19 57 04" src="https://github.com/user-attachments/assets/6f342c8c-f536-4d81-9224-756aeb8a5c8d" />
+<img src="docs/screenshot.png" alt="Bank Account Simulator running in Xcode" width="900">
 
 ## Notes
 
