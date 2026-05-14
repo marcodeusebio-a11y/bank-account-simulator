@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A10000012F95000100000001 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000122F95000100000001 /* XCTest.framework */; };
+		A10000022F95000100000001 /* BankAccountSimulatorTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = A10000132F95000100000001 /* BankAccountSimulatorTests.mm */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		7C5F184D2F94FCBD00367EDC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,13 +24,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7C5F184F2F94FCBD00367EDC /* Bank Account */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Bank Account"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5F184F2F94FCBD00367EDC /* Bank Account Simulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Bank Account Simulator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000112F95000100000001 /* Bank Account Simulator Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bank Account Simulator Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000122F95000100000001 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A10000132F95000100000001 /* BankAccountSimulatorTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BankAccountSimulatorTests.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7C5F18512F94FCBD00367EDC /* Bank Account */ = {
+		7C5F18512F94FCBD00367EDC /* Bank Account Simulator */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Bank Account";
+			path = "Bank Account Simulator";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -38,13 +46,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A10000212F95000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000012F95000100000001 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7C5F18462F94FCBD00367EDC = {
 			isa = PBXGroup;
 			children = (
-				7C5F18512F94FCBD00367EDC /* Bank Account */,
+				7C5F18512F94FCBD00367EDC /* Bank Account Simulator */,
+				A10000232F95000100000001 /* Bank Account Simulator Tests */,
+				A10000222F95000100000001 /* Frameworks */,
 				7C5F18502F94FCBD00367EDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,17 +70,34 @@
 		7C5F18502F94FCBD00367EDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C5F184F2F94FCBD00367EDC /* Bank Account */,
+				7C5F184F2F94FCBD00367EDC /* Bank Account Simulator */,
+				A10000112F95000100000001 /* Bank Account Simulator Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A10000222F95000100000001 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A10000122F95000100000001 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A10000232F95000100000001 /* Bank Account Simulator Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A10000132F95000100000001 /* BankAccountSimulatorTests.mm */,
+			);
+			path = "Bank Account Simulator Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C5F184E2F94FCBD00367EDC /* Bank Account */ = {
+		7C5F184E2F94FCBD00367EDC /* Bank Account Simulator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C5F18562F94FCBD00367EDC /* Build configuration list for PBXNativeTarget "Bank Account" */;
+			buildConfigurationList = 7C5F18562F94FCBD00367EDC /* Build configuration list for PBXNativeTarget "Bank Account Simulator" */;
 			buildPhases = (
 				7C5F184B2F94FCBD00367EDC /* Sources */,
 				7C5F184C2F94FCBD00367EDC /* Frameworks */,
@@ -73,14 +108,32 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7C5F18512F94FCBD00367EDC /* Bank Account */,
+				7C5F18512F94FCBD00367EDC /* Bank Account Simulator */,
 			);
-			name = "Bank Account";
+			name = "Bank Account Simulator";
 			packageProductDependencies = (
 			);
 			productName = "Bank Account";
-			productReference = 7C5F184F2F94FCBD00367EDC /* Bank Account */;
+			productReference = 7C5F184F2F94FCBD00367EDC /* Bank Account Simulator */;
 			productType = "com.apple.product-type.tool";
+		};
+		A10000312F95000100000001 /* Bank Account Simulator Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000512F95000100000001 /* Build configuration list for PBXNativeTarget "Bank Account Simulator Tests" */;
+			buildPhases = (
+				A10000322F95000100000001 /* Sources */,
+				A10000212F95000100000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bank Account Simulator Tests";
+			packageProductDependencies = (
+			);
+			productName = "Bank Account Simulator Tests";
+			productReference = A10000112F95000100000001 /* Bank Account Simulator Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,9 +147,13 @@
 					7C5F184E2F94FCBD00367EDC = {
 						CreatedOnToolsVersion = 26.4.1;
 					};
+					A10000312F95000100000001 = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 7C5F184E2F94FCBD00367EDC;
+					};
 				};
 			};
-			buildConfigurationList = 7C5F184A2F94FCBD00367EDC /* Build configuration list for PBXProject "Bank Account" */;
+			buildConfigurationList = 7C5F184A2F94FCBD00367EDC /* Build configuration list for PBXProject "Bank Account Simulator" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,7 +167,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C5F184E2F94FCBD00367EDC /* Bank Account */,
+				7C5F184E2F94FCBD00367EDC /* Bank Account Simulator */,
+				A10000312F95000100000001 /* Bank Account Simulator Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000322F95000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000022F95000100000001 /* BankAccountSimulatorTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,10 +323,42 @@
 			};
 			name = Release;
 		};
+		A10000412F95000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MarcoDEusebio.Bank-Account-Simulator-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Bank Account Simulator";
+			};
+			name = Debug;
+		};
+		A10000422F95000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MarcoDEusebio.Bank-Account-Simulator-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Bank Account Simulator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C5F184A2F94FCBD00367EDC /* Build configuration list for PBXProject "Bank Account" */ = {
+		7C5F184A2F94FCBD00367EDC /* Build configuration list for PBXProject "Bank Account Simulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C5F18542F94FCBD00367EDC /* Debug */,
@@ -269,11 +367,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C5F18562F94FCBD00367EDC /* Build configuration list for PBXNativeTarget "Bank Account" */ = {
+		7C5F18562F94FCBD00367EDC /* Build configuration list for PBXNativeTarget "Bank Account Simulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C5F18572F94FCBD00367EDC /* Debug */,
 				7C5F18582F94FCBD00367EDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000512F95000100000001 /* Build configuration list for PBXNativeTarget "Bank Account Simulator Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000412F95000100000001 /* Debug */,
+				A10000422F95000100000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -4,4 +4,8 @@
    <FileRef
       location = "self:">
    </FileRef>
+   <Group
+      location = "group:Bank Account Simulator Tests"
+      name = "Bank Account Simulator Tests">
+   </Group>
 </Workspace>
