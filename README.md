@@ -61,7 +61,7 @@ Main source files include:
 
 ## Screenshot
 
-![Bank Account Simulator running in Xcode](docs/screenshot.png)
+![Bank Account Simulator running in Xcode] <img width="1680" height="1050" alt="Screenshot 2026-05-13 at 19 57 04" src="https://github.com/user-attachments/assets/6f342c8c-f536-4d81-9224-756aeb8a5c8d" />
 
 ## Notes
 
