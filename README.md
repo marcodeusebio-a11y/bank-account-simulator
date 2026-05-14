@@ -62,7 +62,7 @@ Main source files include:
 
 ## Screenshot
 
-<img src="docs/screenshot.png" alt="Bank Account Simulator running in Xcode" width="900">
+[Bank Account Simulator running in Xcode] <img width="849" height="1050" alt="Screenshot 2026-05-13 at 20 10 34" src="https://github.com/user-attachments/assets/623318b9-88ce-4b66-944e-f63e0e6d36d8" />
 
 ## Notes
 
